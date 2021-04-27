@@ -2,3 +2,11 @@
 Theme name: Storefront Child
 Template: storefront
 */
+
+.custom-footer {
+    display: flex;
+}
+
+.custom-footer-inner {
+    width: 50%;
+}
