@@ -13,4 +13,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /labb2-axel/index.php [L]
 </IfModule>
 
+php_value upload_max_filesize 10M
+php_value post_max_size 10M
+php_value max_execution_time 500
+php_value max_input_time 500
+
 # END WordPress

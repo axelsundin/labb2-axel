@@ -8,5 +8,14 @@ Template: storefront
 }
 
 .custom-footer-inner {
+    display: flex;
+    align-items: flex-end;
+
     width: 50%;
+    padding: 0 3%;
+    
+}
+
+#custom-menu a {
+    color: black;
 }

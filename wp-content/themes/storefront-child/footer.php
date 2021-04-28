@@ -17,7 +17,6 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="custom-footer">
 			<div class="custom-footer-inner">
-				<div class="col-full">
 					<?php
 					/**
 					 * Functions hooked in to storefront_footer action
@@ -25,13 +24,15 @@
 					 * @hooked storefront_footer_widgets - 10
 					 * @hooked storefront_credit         - 20
 					 */
+
 					do_action( 'storefront_footer' );
+
 					?>
-				</div><!-- .col-full -->
 			</div><!-- .custom-footer-inner -->
-			<div class="custom-footer-inner">
+			<div class="custom-footer-inner" style="border-left: solid 1px white;">
 				<?php 
-				dynamic_sidebar('socialmedia'); // Visar länkar till sociala medier
+				do_action( 'storefront_footer_custom' );
+				//dynamic_sidebar('socialmedia'); // Visar länkar till sociala medier
 				?>
 			</div><!-- .custom-footer-inner -->
 		</div><!-- .custom-footer -->
