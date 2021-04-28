@@ -14,7 +14,7 @@ get_header();
 
 ?>
 
-<div id="custom" style="display: flex; ">
+<div id="custom" style="display: flex; margin: 1.618em 0 0 0; ">
 
     <div style="padding-right: 10%;">
     
